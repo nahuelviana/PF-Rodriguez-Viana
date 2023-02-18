@@ -79,7 +79,7 @@ h3 {
   background-color: #001524;
   color: blueviolet;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 0px;
 }
 
 .main section p {
@@ -243,15 +243,8 @@ fieldset {
 }
 /* ----------------------mediaq index------------------------- */
 @media screen and(max-width:590px) {
-  html body main .muestras1 img {
-    margin: auto;
-    width: 100px;
-    height: 50px;
-  }
-}
-
-@media screen and(max-width:590px) {
-  html body main .muestras1 img {
+  .muestras1 {
+    display: flex;
     flex-direction: column;
   }
 }
