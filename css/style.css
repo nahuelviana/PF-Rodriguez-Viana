@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,100&display=swap);
+
+/*--------------------------- header -----------------*/
+header {
+  background-color: #a2e8dd;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #001524;
+}
+
+.nav__item {
+  padding: 10px;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: blueviolet;
+  background-color: #001524;
+}
+/* -------------body----------- */
+
+.body {
+  font-family: "Roboto", sans-serif;
+}
+
+.boton1 {
+  width: 100px;
+}
+.boton2 {
+  width: 100px;
+}
+/* --------------------main--------------------- */
+
+.intro-section {
+  background-color: #a2e8dd;
+}
+
+.second-section {
+  background-color: #a2e8dd;
+}
+
+h1 {
+  text-align: center;
+  background-color: #001524;
+  color: blueviolet;
+}
+.misdisenos {
+  padding: 10px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.otrosdisenos {
+  padding: 10px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+
+.clase2 {
+  text-align: center;
+  background-color: #001524;
+  color: blueviolet;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.main section p {
+  text-transform: uppercase;
+}
+
+.iconoplaystore {
+  width: 7rem;
+}
+.iconoappstore {
+  width: 7rem;
+}
+
+.second-section {
+  text-align: center;
+  padding: 5rem;
+}
+
+.muestras1 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+}
+
+.muestras1 img {
+  margin: 10px;
+  height: 100px;
+  width: 200px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 8;
+  transition: 0.5s ease;
+}
+
+.muestras1 img:hover {
+  cursor: crosshair;
+  width: 300px;
+  filter: contrast(120%);
+}
+
+.muestras2 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+}
+
+.muestras2 img {
+  margin: 10px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 8;
+  transition: 0.5s ease;
+}
+
+.muestras2 img:hover {
+  cursor: crosshair;
+  width: 300px;
+  filter: contrast(120%);
+}
+
+/* -----------------footer---------------- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 0rem;
+  color: #a2e8dd;
+  background-color: #001524;
+  font-family: Impact, Haettenschweiler, "cursive", sans-serif;
+}
+
+.icono-redes {
+  align-items: center;
+}
+
+footer .icono-redes a img {
+  width: 40px;
+}
+
+/* ------------------------PAGINA DEL CONTACTO----------------------------- */
+.contacto {
+  font-size: 3rem;
+}
+
+.formulario {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #c2aff0;
+}
+
+.envianostuconsulta {
+  font-size: 3rem;
+  padding: 10px;
+  color: blueviolet;
+  background-color: #001524;
+}
+fieldset {
+  margin: 5px;
+  padding: 5px;
+}
+
+/* ------------------pagina de catalogo------------------- */
+.mis-diseños {
+  display: grid;
+  grid-template-rows: 170px 170px 170px 170px 170px 170px;
+  grid-template-columns: 300px 300px;
+}
+
+.diseño-muestra img {
+  width: 200px;
+  height: 100px;
+}
+
+.diseños-muestra-ajenos {
+  display: grid;
+  grid-template-rows: 170px 170px 170px 170px 170px 170px;
+  grid-template-columns: 300px 300px;
+}
+
+.contenedor-catalogo {
+  background-color: #c2aff0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mis-diseños img:hover {
+  cursor: crosshair;
+  width: 250px;
+  filter: contrast(120%);
+}
+
+.diseños-muestra-ajenos img:hover {
+  cursor: crosshair;
+  width: 250px;
+  filter: contrast(120%);
+}
+/* --------pagina de ingreso---------- */
+
+.formulario-pag-ingresa {
+  height: 50px;
+  background-color: #c2aff0;
+  text-align: center;
+  justify-content: center;
+}
+
+.formulario-ingreso {
+  background-color: #c2aff0;
+  text-align: center;
+  justify-content: center;
+}
+
+/* ---------pagina de diseñadores------------ */
+
+.avatares img:hover {
+  cursor: crosshair;
+  width: 250px;
+  filter: contrast(120%);
+}
+/* ----------------------mediaq index------------------------- */
+@media screen and(max-width:590px) {
+  html body main .muestras1 img {
+    margin: auto;
+    width: 100px;
+    height: 50px;
+  }
+}
+
+@media screen and(max-width:590px) {
+  html body main .muestras1 img {
+    flex-direction: column;
+  }
+}
