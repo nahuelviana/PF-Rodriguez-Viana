@@ -256,3 +256,27 @@ fieldset {
   width: 100px;
 }
 /* ----------------------mediaq index------------------------- */
+
+.footer {
+  align-content: center;
+}
+
+@media (max-width: 1200px) {
+  .contenedor-catalogo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .mis-diseños {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 50%;
+  }
+}
