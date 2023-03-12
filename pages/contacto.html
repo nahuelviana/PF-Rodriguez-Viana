@@ -54,27 +54,28 @@
       <section class="formulario">
         <form action="">
           <legend class="envianostuconsulta">Envianos tu consulta</legend>
-          <fieldset>
+          <fieldset class="fieldset">
             <div>
               <label class="nombre" for="Nombre">Nombre:</label>
-              <input type="text" name="nombre" />
+              <div><input type="text" name="nombre" /></div>
             </div>
             <div>
               <label class="apellido" for="apellido">apellido:</label>
-              <input type="text" name="apellido" />
+              <div><input type="text" name="apellido" /></div>
             </div>
             <div>
-              <label class="email" for="Email">Email: </label>
-              <input type="text" width="250px" height="150px" />
+              <label class="email" for="Email">Email (la respuesta a su duda sera enviada a este mail): </label>
+              <div><input type="text" width="250px" height="150px" /></div>
             </div>
             <div class="consulta">
-              <textarea name="comentario" id="" cols="100" rows="10"></textarea>
+              <p>En que podemos ayudarte?</p>
+              <textarea class="textoconsulta" name="comentario" id="" cols="100" rows="10"></textarea>
             </div>
-            <div>Acepta los terminos y condiciones</div>
-            <input type="checkbox" name="acepta" value="1" />
+            <div class="aceptaterminos">Acepta los terminos y condiciones</div>
+            <input class="checkbox" type="checkbox" name="acepta" value="1" width="20px" height="20px" />
             <div>
-              <input type="submit" value="enviar" />
-              <input type="reset" value="borrar" />
+              <input class="enviar" type="submit" value="enviar" />
+              <input class="borrar" type="reset" value="borrar" />
             </div>
           </fieldset>
         </form>

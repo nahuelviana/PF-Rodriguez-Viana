@@ -11,24 +11,6 @@ header {
   background-color: #a2e8dd;
 }
 
-.nav__list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  background-color: #001524;
-}
-
-.nav__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.nav__link {
-  text-decoration: none;
-  text-transform: uppercase;
-}
 /* -------------body----------- */
 
 .body {
@@ -36,9 +18,6 @@ header {
 }
 
 .boton1 {
-  width: 100px;
-}
-.boton2 {
   width: 100px;
 }
 /* --------------------main--------------------- */
@@ -178,16 +157,66 @@ footer .icono-redes a img {
 
 .envianostuconsulta {
   font-size: 3rem;
+  margin: 20px;
   padding: 10px;
   color: blueviolet;
   background-color: #001524;
 }
-fieldset {
-  margin: 5px;
+
+.fieldset {
   padding: 5px;
 }
 
+.nombre {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+.apellido {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+.email {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+
+.consulta p {
+  font-size: 30px;
+}
+
+.textoconsulta {
+  width: 600px;
+  height: 200px;
+}
+
+.aceptaterminos {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.enviar {
+  margin-bottom: 20px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.borrar {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
 /* ------------------pagina de catalogo------------------- */
+
+.contenedor-diseños h2 {
+  justify-content: center;
+  align-items: center;
+}
+
 .mis-diseños {
   place-items: center;
   align-items: center;
@@ -239,16 +268,67 @@ fieldset {
 /* --------pagina de ingreso---------- */
 
 .formulario-pag-ingresa {
-  height: 50px;
   background-color: #c2aff0;
   text-align: center;
   justify-content: center;
 }
 
+.usuario {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+.contraseña {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+
 .formulario-ingreso {
-  background-color: #c2aff0;
   text-align: center;
-  justify-content: center;
+  background-color: #c2aff0;
+}
+
+.nombredeusuario {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+.nombrecreatucuenta {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+.apellidocreatucuenta {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+.contraseñacreatucuenta {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+.emailcreatucuenta {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+
+.botoningresa {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.botoncreatucuenta {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 20px;
 }
 
 /* ---------pagina de diseñadores------------ */
@@ -284,6 +364,7 @@ fieldset {
   background-color: #001524;
   justify-content: center;
   text-decoration: underline;
+  font-size: 30px;
 }
 
 .card-body img {
@@ -313,6 +394,12 @@ fieldset {
   }
   .muestras2 {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .diseño-muestra {
+    display: grid;
   }
 }
 
