@@ -1,0 +1,46 @@
+@media screen and (max-width: 1200px) {
+  .contenedor-catalogo {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contenedor-diseños {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .muestras1 {
+    flex-direction: column;
+  }
+  .muestras2 {
+    flex-direction: column;
+  }
+  .muestras1 {
+    width: 50%;
+  }
+  .muestras2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .envianostuconsulta {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .diseño-muestra {
+    display: grid;
+  }
+  .textoconsulta {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  footer {
+    flex-direction: column;
+  }
+}

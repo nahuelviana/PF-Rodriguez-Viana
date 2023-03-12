@@ -1,0 +1,17 @@
+footer {
+  .encontranos {
+  }
+  .icono-redes {
+    align-items: center;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+  color: #a2e8dd;
+  background-color: #001524;
+  font-family: Impact, Haettenschweiler, "cursive", sans-serif;
+  footer .icono-redes a img {
+    width: 40px;
+  }
+}

@@ -1,6 +1,10 @@
 /* -----------main index ------------- */
-main {
+.main {
   h1 {
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #001524;
+    color: #c2aff0;
   }
   .intro-section {
     background-color: #a2e8dd;
@@ -9,20 +13,50 @@ main {
       background-color: #001524;
       color: blueviolet;
       padding: 0px;
+      text-transform: uppercase;
       p {
-        text-transform: uppercase;
       }
     }
     h2 {
+      font-size: 3rem;
+      padding: 1rem;
     }
     .misdisenos {
+      padding: 10px;
+      font-size: 2rem;
+      text-decoration: underline;
     }
     .muestras1 {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      width: 600px;
       img {
+        margin: 10px;
+        height: 100px;
+        width: 200px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 8;
+        transition: 0.5s ease;
+        &:hover {
+          cursor: crosshair;
+          width: 300px;
+          filter: contrast(120%);
+        }
       }
     }
     .muestras2 {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      width: 600px;
       img {
+        margin: 10px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 8;
+        transition: 0.5s ease;
       }
     }
     span {
@@ -34,10 +68,79 @@ main {
     }
   }
   .second-section {
+    text-align: center;
+    padding: 5rem;
   }
 }
 
 /*-----------main catalogo---------- */
+main {
+  h1 {
+  }
+  .contendor-catalogo {
+    align-items: center;
+    background-color: #c2aff0;
+    display: flex;
+    justify-content: space-around;
+    .contendor-diseños {
+      h2 {
+        justify-content: center;
+        align-items: center;
+      }
+      .mis-diseños {
+        place-items: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-rows: 170px 170px 170px 170px 170px 170px;
+        grid-template-columns: 300px 300px;
+        .diseños-muestra {
+          justify-content: center;
+          width: 200px;
+          height: 100px;
+          img {
+            width: 200px;
+            height: 100px;
+            align-items: center;
+            &:hover {
+              cursor: crosshair;
+              width: 250px;
+              filter: contrast(120%);
+            }
+          }
+        }
+      }
+    }
+    .contendor-comunidad {
+      .comunidad {
+        h2 {
+        }
+      }
+      .diseños-ajenos {
+        .diseños-muestras-ajenos {
+          place-items: center;
+          align-items: center;
+          justify-content: center;
+          display: grid;
+          grid-template-rows: 170px 170px 170px 170px 170px 170px;
+          grid-template-columns: 300px 300px;
+          .diseños-muestra {
+            img {
+              width: 200px;
+              height: 100px;
+              align-items: center;
+              &:hover {
+                cursor: crosshair;
+                width: 250px;
+                filter: contrast(120%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 /*-----------main contacto---------- */
 
@@ -45,19 +148,57 @@ main {
   h1 {
   }
   .formulario {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #c2aff0;
     .envianostuconsulta {
+      font-size: 3rem;
+      margin: 20px;
+      padding: 10px;
+      color: blueviolet;
+      background-color: #001524;
     }
     .fieldset {
+      padding: 5px;
       div {
         .nombre {
+          font-size: 30px;
+          text-decoration: underline;
+          margin: 10px;
         }
         .apellido {
+          font-size: 30px;
+          text-decoration: underline;
+          margin: 10px;
         }
         .email {
+          font-size: 30px;
+          text-decoration: underline;
+          margin: 10px;
         }
-        .consulta {
-          width: 200px;
-          height: 100px;
+        .consulta p {
+          font-size: 30px;
+        }
+        .textoconsulta {
+          width: 600px;
+          height: 200px;
+        }
+        .aceptaterminos {
+          font-size: 25px;
+          text-decoration: underline;
+        }
+        .enviar {
+          margin-bottom: 20px;
+          margin-right: 10px;
+          padding: 5px;
+          font-size: 20px;
+        }
+        .borrar {
+          margin-bottom: 20px;
+          margin-left: 10px;
+          padding: 5px;
+          font-size: 20px;
         }
       }
     }
@@ -66,4 +207,134 @@ main {
 
 /*-----------main diseñadores---------- */
 
+main {
+  h1 {
+  }
+  .mas-puntaje {
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #c2aff0;
+  }
+  .aqui-encontraras {
+    text-align: center;
+    color: #c2aff0;
+    background-color: #001524;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 30px;
+    p {
+    }
+  }
+  .avatar-diseñadores {
+    background-color: #c2aff0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    div {
+      align-items: center;
+      text-align: center;
+      width: 300px;
+      height: 400px;
+      background-color: #a2e8dd;
+      border-radius: 5%;
+      padding: 8px;
+      margin-bottom: 8px;
+      img {
+      }
+      h3 {
+      }
+      p {
+      }
+      i {
+      }
+    }
+  }
+}
+
 /*-----------main ingresa---------- */
+
+main {
+  h1 {
+  }
+  .ingresa {
+    .fieldset {
+      .formulario-pag-ingresa {
+        background-color: #c2aff0;
+        text-align: center;
+        justify-content: center;
+      }
+      div {
+        h2 {
+        }
+        .usuario {
+          font-size: 30px;
+          text-decoration: underline;
+          margin: 10px;
+        }
+      }
+      div {
+        .contraseña {
+          font-size: 30px;
+          text-decoration: underline;
+          margin: 10px;
+        }
+      }
+      .botoningresa {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        padding: 5px;
+        font-size: 20px;
+      }
+    }
+    .formulario-ingreso {
+      text-align: center;
+      background-color: #c2aff0;
+      h2 {
+      }
+      div {
+        .nombredeusuario {
+          font-size: 30px;
+          text-decoration: underline;
+          margin: 10px;
+        }
+      }
+      div {
+        .nombrecreatucuenta {
+          font-size: 30px;
+          text-decoration: underline;
+          margin: 10px;
+        }
+      }
+      div {
+        .apellidocreatucuenta {
+          font-size: 30px;
+          text-decoration: underline;
+          margin: 10px;
+        }
+      }
+      div {
+        .emaicreatucuenta {
+          font-size: 30px;
+          text-decoration: underline;
+          margin: 10px;
+        }
+      }
+      div {
+        .contraseñacreatucuenta {
+          font-size: 30px;
+          text-decoration: underline;
+          margin: 10px;
+        }
+      }
+      .botoncreatucuenta {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        margin-right: 10px;
+        padding: 5px;
+        font-size: 20px;
+      }
+    }
+  }
+}
