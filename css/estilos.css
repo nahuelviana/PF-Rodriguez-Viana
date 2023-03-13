@@ -1,0 +1,367 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #a2e8dd;
+}
+/* -----------main index ------------- */
+main h1 {
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #001524;
+  color: #c2aff0;
+}
+main .intro-section {
+  background-color: #c2aff0;
+}
+main .intro-section .clase2 {
+  text-align: center;
+  background-color: #001524;
+  color: blueviolet;
+  padding: 0px;
+  text-transform: uppercase;
+}
+main .intro-section h2 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+main .intro-section .misdisenos {
+  padding: 10px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+main .intro-section .muestras1 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+}
+main .intro-section .muestras1 .muestra {
+  margin: 10px;
+  height: 100px;
+  width: 200px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 8;
+  transition: 0.5s ease;
+}
+main .intro-section .muestras1 .muestra:hover {
+  cursor: crosshair;
+  width: 300px;
+  filter: contrast(120%);
+}
+main .intro-section .otrosdisenos {
+  padding: 10px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+main .intro-section .muestras2 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+}
+main .intro-section .muestras2 img {
+  margin: 10px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 8;
+  transition: 0.5s ease;
+}
+main .intro-section .muestras2 img:hover {
+  cursor: crosshair;
+  width: 300px;
+  filter: contrast(120%);
+}
+main .intro-section span a img {
+  width: 100px;
+}
+main .second-section {
+  background-color: #c2aff0;
+  text-align: center;
+  padding: 5rem;
+}
+main .second-section .playstore .iconoplaystore {
+  width: 7rem;
+}
+main .second-section .iconoappstore {
+  width: 7rem;
+}
+
+/*-----------main catalogo---------- */
+main .contenedor-catalogo {
+  align-items: center;
+  background-color: #c2aff0;
+  display: flex;
+  justify-content: space-around;
+}
+main .contenedor-catalogo .contenedor-disenos h2 {
+  justify-content: center;
+  align-items: center;
+}
+main .contenedor-catalogo .contenedor-disenos .mis-disenos {
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 170px 170px 170px 170px 170px 170px;
+  grid-template-columns: 300px 300px;
+}
+main .contenedor-catalogo .contenedor-disenos .mis-disenos .diseno-muestra {
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+}
+main .contenedor-catalogo .contenedor-disenos .mis-disenos .diseno-muestra img {
+  width: 200px;
+  height: 100px;
+  align-items: center;
+}
+main .contenedor-catalogo .contenedor-disenos .mis-disenos .diseno-muestra img:hover {
+  cursor: crosshair;
+  width: 250px;
+  filter: contrast(120%);
+}
+main .contenedor-catalogo .contenedor-comunidad .disenos-ajenos .disenos-muestras-ajenos {
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 170px 170px 170px 170px 170px 170px;
+  grid-template-columns: 300px 300px;
+}
+main .contenedor-catalogo .contenedor-comunidad .disenos-ajenos .disenos-muestras-ajenos .diseños-muestra img {
+  width: 200px;
+  height: 100px;
+  align-items: center;
+}
+main .contenedor-catalogo .contenedor-comunidad .disenos-ajenos .disenos-muestras-ajenos .diseños-muestra img:hover {
+  cursor: crosshair;
+  width: 250px;
+  filter: contrast(120%);
+}
+
+/*-----------main contacto---------- */
+main .formulario {
+  display: flex;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+  background-color: #c2aff0;
+}
+main .formulario .envianostuconsulta {
+  font-size: 3rem;
+  margin: 20px;
+  padding: 10px;
+  color: blueviolet;
+  background-color: #001524;
+}
+main .formulario .fieldset {
+  padding: 5px;
+}
+main .formulario .fieldset div .nombre {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+main .formulario .fieldset div .apellido {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+main .formulario .fieldset div .email {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+main .formulario .fieldset div .consulta p {
+  font-size: 30px;
+}
+main .formulario .fieldset div .textoconsulta {
+  width: 600px;
+  height: 200px;
+}
+main .formulario .fieldset div .aceptaterminos {
+  font-size: 25px;
+  text-decoration: underline;
+}
+main .formulario .fieldset div .enviar {
+  margin-bottom: 20px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+main .formulario .fieldset div .borrar {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+/*-----------main diseñadores---------- */
+main .mas-puntaje {
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #c2aff0;
+}
+main .aqui-encontraras {
+  text-align: center;
+  color: #c2aff0;
+  background-color: #001524;
+  justify-content: center;
+  text-decoration: underline;
+  font-size: 30px;
+  margin-bottom: -16px;
+}
+main .avatar-diseñadores {
+  background-color: #c2aff0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+main .avatar-diseñadores div {
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  background-color: #a2e8dd;
+  border-radius: 5%;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+/*-----------main ingresa---------- */
+main .ingresa fieldset .formulario-pag-ingresa {
+  background-color: #c2aff0;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+}
+main .ingresa fieldset div .usuario {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+main .ingresa fieldset div .contraseña {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+main .ingresa fieldset .botoningresa {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+main .ingresa .formulario-ingreso {
+  padding: 30px;
+  text-align: center;
+  background-color: #c2aff0;
+}
+main .ingresa .formulario-ingreso div .nombredeusuario {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+main .ingresa .formulario-ingreso div .nombrecreatucuenta {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+main .ingresa .formulario-ingreso div .apellidocreatucuenta {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+main .ingresa .formulario-ingreso div .emailcreatucuenta {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+main .ingresa .formulario-ingreso div .contraseñacreatucuenta {
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 10px;
+}
+main .ingresa .formulario-ingreso .botoncreatucuenta {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+  color: #a2e8dd;
+  background-color: #001524;
+  font-family: Impact, Haettenschweiler, "cursive", sans-serif;
+}
+footer .icono-redes {
+  align-items: center;
+}
+footer .icono-redes a img {
+  width: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contenedor-catalogo {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contenedor-diseños {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .muestras1 {
+    flex-direction: column;
+  }
+  .muestras2 {
+    flex-direction: column;
+  }
+  .muestras1 {
+    width: 50%;
+  }
+  .muestras2 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 790px) {
+  .envianostuconsulta {
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 600px) {
+  .diseño-muestra {
+    display: grid;
+  }
+  main .formulario fieldset .consulta .textoconsulta {
+    width: 50%;
+    height: 50%;
+  }
+  .muestras1 {
+    width: 200px;
+  }
+  .muestras2 {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 425px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

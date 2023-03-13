@@ -1,5 +1,5 @@
 /* -----------main index ------------- */
-.main {
+main {
   h1 {
     margin-bottom: 0;
     text-align: center;
@@ -7,7 +7,7 @@
     color: #c2aff0;
   }
   .intro-section {
-    background-color: #a2e8dd;
+    background-color: #c2aff0;
     .clase2 {
       text-align: center;
       background-color: #001524;
@@ -31,7 +31,7 @@
       display: flex;
       justify-content: center;
       width: 600px;
-      img {
+      .muestra {
         margin: 10px;
         height: 100px;
         width: 200px;
@@ -46,6 +46,11 @@
         }
       }
     }
+    .otrosdisenos {
+      padding: 10px;
+      font-size: 2rem;
+      text-decoration: underline;
+    }
     .muestras2 {
       padding: 10px;
       display: flex;
@@ -57,6 +62,11 @@
         object-fit: cover;
         opacity: 8;
         transition: 0.5s ease;
+        &:hover {
+          cursor: crosshair;
+          width: 300px;
+          filter: contrast(120%);
+        }
       }
     }
     span {
@@ -68,8 +78,19 @@
     }
   }
   .second-section {
+    background-color: #c2aff0;
     text-align: center;
     padding: 5rem;
+    h3 {
+    }
+    .playstore {
+      .iconoplaystore {
+        width: 7rem;
+      }
+    }
+    .iconoappstore {
+      width: 7rem;
+    }
   }
 }
 
@@ -77,24 +98,24 @@
 main {
   h1 {
   }
-  .contendor-catalogo {
+  .contenedor-catalogo {
     align-items: center;
     background-color: #c2aff0;
     display: flex;
     justify-content: space-around;
-    .contendor-diseños {
+    .contenedor-disenos {
       h2 {
         justify-content: center;
         align-items: center;
       }
-      .mis-diseños {
+      .mis-disenos {
         place-items: center;
         align-items: center;
         justify-content: center;
         display: grid;
         grid-template-rows: 170px 170px 170px 170px 170px 170px;
         grid-template-columns: 300px 300px;
-        .diseños-muestra {
+        .diseno-muestra {
           justify-content: center;
           width: 200px;
           height: 100px;
@@ -111,13 +132,13 @@ main {
         }
       }
     }
-    .contendor-comunidad {
+    .contenedor-comunidad {
       .comunidad {
         h2 {
         }
       }
-      .diseños-ajenos {
-        .diseños-muestras-ajenos {
+      .disenos-ajenos {
+        .disenos-muestras-ajenos {
           place-items: center;
           align-items: center;
           justify-content: center;
@@ -149,6 +170,7 @@ main {
   }
   .formulario {
     display: flex;
+    padding: 30px;
     text-align: center;
     justify-content: center;
     background-color: #c2aff0;
@@ -222,6 +244,7 @@ main {
     justify-content: center;
     text-decoration: underline;
     font-size: 30px;
+    margin-bottom: -16px;
     p {
     }
   }
@@ -258,9 +281,10 @@ main {
   h1 {
   }
   .ingresa {
-    .fieldset {
+    fieldset {
       .formulario-pag-ingresa {
         background-color: #c2aff0;
+        padding: 30px;
         text-align: center;
         justify-content: center;
       }
@@ -289,6 +313,7 @@ main {
       }
     }
     .formulario-ingreso {
+      padding: 30px;
       text-align: center;
       background-color: #c2aff0;
       h2 {
@@ -315,7 +340,7 @@ main {
         }
       }
       div {
-        .emaicreatucuenta {
+        .emailcreatucuenta {
           font-size: 30px;
           text-decoration: underline;
           margin: 10px;
