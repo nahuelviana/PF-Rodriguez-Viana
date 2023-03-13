@@ -27,6 +27,7 @@ main .intro-section .clase2 {
   text-transform: uppercase;
 }
 main .intro-section h2 {
+  text-align: center;
   font-size: 3rem;
   padding: 1rem;
 }
@@ -101,8 +102,10 @@ main .contenedor-catalogo {
   justify-content: space-around;
 }
 main .contenedor-catalogo .contenedor-disenos h2 {
+  text-align: center;
   justify-content: center;
   align-items: center;
+  text-decoration: underline;
 }
 main .contenedor-catalogo .contenedor-disenos .mis-disenos {
   place-items: center;
@@ -126,6 +129,10 @@ main .contenedor-catalogo .contenedor-disenos .mis-disenos .diseno-muestra img:h
   cursor: crosshair;
   width: 250px;
   filter: contrast(120%);
+}
+main .contenedor-catalogo .contenedor-comunidad .comunidad h2 {
+  text-align: center;
+  text-decoration: underline;
 }
 main .contenedor-catalogo .contenedor-comunidad .disenos-ajenos .disenos-muestras-ajenos {
   place-items: center;
@@ -307,7 +314,11 @@ footer {
   background-color: #001524;
   font-family: Impact, Haettenschweiler, "cursive", sans-serif;
 }
+footer .encontranos {
+  text-decoration: underline;
+}
 footer .icono-redes {
+  padding: 15px;
   align-items: center;
 }
 footer .icono-redes a img {
@@ -332,10 +343,10 @@ footer .icono-redes a img {
     flex-direction: column;
   }
   .muestras1 {
-    width: 50%;
+    width: 350px;
   }
   .muestras2 {
-    width: 50%;
+    width: 350px;
   }
 }
 @media screen and (max-width: 790px) {
@@ -351,15 +362,16 @@ footer .icono-redes a img {
     width: 50%;
     height: 50%;
   }
-  .muestras1 {
-    width: 200px;
+  main .intro-section .muestras1 {
+    width: 20%;
   }
-  .muestras2 {
-    width: 200px;
+  main .intro-section .muestras2 {
+    width: 20%;
   }
 }
 @media screen and (max-width: 425px) {
   footer {
+    height: 150px;
     flex-direction: column;
   }
 }

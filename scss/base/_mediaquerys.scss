@@ -16,10 +16,10 @@
     flex-direction: column;
   }
   .muestras1 {
-    width: 50%;
+    width: 350px;
   }
   .muestras2 {
-    width: 50%;
+    width: 350px;
   }
 }
 
@@ -39,16 +39,19 @@
     width: 50%;
     height: 50%;
   }
-  .muestras1 {
-    width: 200px;
+  main .intro-section .muestras1 {
+    width: 20%;
   }
-  .muestras2 {
-    width: 200px;
+  main .intro-section .muestras2 {
+    width: 20%;
   }
 }
 
 @media screen and (max-width: 425px) {
   footer {
+    height: 150px;
     flex-direction: column;
+  }
+  footer .icono-redes {
   }
 }
