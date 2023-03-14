@@ -141,12 +141,7 @@ main {
 main {
   h1 {
     font-size: 4rem;
-    background: linear-gradient(
-        90deg,
-        $primary-color,
-        $titlesubtitle-bgcolor,
-        $secondary-color
-      )
+    background: linear-gradient(90deg, $primary-color, white, $secondary-color)
       0 0 / 400% 100%;
     animation: move-bg 4s infinite linear;
     color: transparent;
@@ -234,7 +229,7 @@ main {
   }
   .formulario {
     display: flex;
-    padding: 30px;
+    padding: 80px;
     text-align: center;
     justify-content: center;
     background-color: $primary-color;
@@ -350,7 +345,7 @@ main {
     fieldset {
       .formulario-pag-ingresa {
         background-color: $primary-color;
-        padding: 30px;
+        padding: 50px;
         text-align: center;
         justify-content: center;
       }
@@ -379,7 +374,7 @@ main {
       }
     }
     .formulario-ingreso {
-      padding: 30px;
+      padding: 60px;
       text-align: center;
       background-color: $primary-color;
       h2 {
