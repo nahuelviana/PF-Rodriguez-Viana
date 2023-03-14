@@ -14,7 +14,6 @@ main h1 {
   margin-bottom: 0;
   text-align: center;
   background-color: #001524;
-  color: #c2aff0;
 }
 main .intro-section {
   background-color: #c2aff0;
@@ -79,22 +78,77 @@ main .intro-section .muestras2 img:hover {
   width: 300px;
   filter: contrast(120%);
 }
-main .intro-section span a img {
-  width: 100px;
+main .intro-section span a .btn {
+  padding: 20px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: relative;
 }
-main .second-section {
+main .intro-section span .btn:before {
+  content: "Ver más";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+main .intro-section span .btn:hover:before,
+main .intro-section span .btn:hover:after {
+  transform: rotatex(0);
+}
+main .intro-section span .btn:after {
+  content: "Ver más";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  transition-delay: 0.25s;
+}
+
+.second-section {
   background-color: #c2aff0;
   text-align: center;
   padding: 5rem;
 }
-main .second-section .playstore .iconoplaystore {
+.second-section .playstore .iconoplaystore {
   width: 7rem;
 }
-main .second-section .iconoappstore {
+.second-section .iconoappstore {
   width: 7rem;
 }
 
 /*-----------main catalogo---------- */
+main h1 {
+  font-size: 4rem;
+  background: linear-gradient(90deg, #c2aff0, #001524, #a2e8dd) 0 0/400% 100%;
+  animation: move-bg 4s infinite linear;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+@keyframes move-bg {
+  to {
+    background-position: 400% 0;
+  }
+}
 main .contenedor-catalogo {
   align-items: center;
   background-color: #c2aff0;
