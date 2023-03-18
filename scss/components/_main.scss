@@ -6,15 +6,18 @@ main {
     background-color: $titlesubtitle-bgcolor;
   }
   .intro-section {
-    background-color: #c2aff0;
-    .clase2 {
+    background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/modern-building_OYOH5FJMJ7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    .ingresaoregistrate {
+      height: 30px;
+      background-color: $secondary-color;
+      text-decoration: solid;
       text-align: center;
-      background-color: $titlesubtitle-bgcolor;
-      color: $text-font-color;
-      padding: 0px;
-      text-transform: uppercase;
-      p {
-      }
+      text-decoration: underline;
+      font-size: large;
     }
     h2 {
       text-align: center;
@@ -71,6 +74,7 @@ main {
     }
     span {
       a {
+        margin-left: 30px;
         .btn {
           padding: 20px 40px;
           text-decoration: none;
@@ -118,31 +122,38 @@ main {
         transition-delay: 0.25s;
       }
     }
-  }
-}
-
-.second-section {
-  background-color: $primary-color;
-  text-align: center;
-  padding: 5rem;
-  h3 {
-  }
-  .playstore {
-    .iconoplaystore {
-      width: 7rem;
+    h3 {
+      text-align: center;
+      color: black;
+      text-decoration: underline;
     }
-  }
-  .iconoappstore {
-    width: 7rem;
+    .playstore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 10rem;
+      }
+    }
+    .appstore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      img {
+        height: 10rem;
+      }
+    }
   }
 }
 
 /*-----------main catalogo---------- */
 main {
   h1 {
+    background-color: $titlesubtitle-bgcolor;
     font-size: 4rem;
-    background: linear-gradient(90deg, $primary-color, white, $secondary-color)
-      0 0 / 400% 100%;
+    background: linear-gradient(90deg, $primary-color, grey, $secondary-color) 0
+      0 / 400% 100%;
     animation: move-bg 4s infinite linear;
     color: transparent;
     -webkit-background-clip: text;
@@ -155,7 +166,11 @@ main {
   }
   .contenedor-catalogo {
     align-items: center;
-    background-color: $primary-color;
+    background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/building-balconies_0WLRIRVMAA.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     display: flex;
     justify-content: space-around;
     .contenedor-disenos {
@@ -232,7 +247,11 @@ main {
     padding: 80px;
     text-align: center;
     justify-content: center;
-    background-color: $primary-color;
+    background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/skyscaper-office%20building_1HZVBKVAUM.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     .envianostuconsulta {
       font-size: 3rem;
       margin: 20px;
@@ -296,7 +315,7 @@ main {
   .mas-puntaje {
     margin-bottom: 0;
     text-align: center;
-    background-color: $primary-color;
+    background-color: $secondary-color;
   }
   .aqui-encontraras {
     text-align: center;
@@ -310,117 +329,154 @@ main {
     }
   }
   .avatar-diseñadores {
-    background-color: $primary-color;
+    background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/building-balconies_NQLPZWWXAG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 50px;
-    div {
-      align-items: center;
-      text-align: center;
-      width: 300px;
-      height: 400px;
-      background-color: $secondary-color;
-      border-radius: 5%;
-      padding: 8px;
-      margin-bottom: 8px;
-      img {
-      }
-      h3 {
-      }
-      p {
-      }
-      i {
+    .card {
+      color: white;
+      background-image: url(https://www.w3schools.com/w3images/avatar2.png);
+      background-size: cover;
+      padding: 10rem 0 0;
+      max-width: 280px;
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: transform 500ms ease;
+      .card-content {
+        padding: 1.5rem;
+        background: linear-gradient(black, rgba(0, 0, 0, 0.5));
+        .card-content__title {
+          text-decoration: underline;
+          text-decoration-color: lightgray;
+        }
+        .card-content__body {
+          color: rgba(255, 255, 255, 0.8);
+        }
+        .button {
+          cursor: pointer;
+          display: inline-block;
+          text-decoration: none;
+          color: white;
+          background-color: black;
+          padding: 0.2rem 1rem;
+          border-radius: 0.25rem;
+          transition: all 0.5s ease;
+        }
+        .button:hover,
+        .button:focus {
+          background-color: white;
+          color: black;
+        }
       }
     }
   }
 }
 
 /*-----------main ingresa---------- */
-
 main {
   h1 {
   }
-  .ingresa {
-    fieldset {
-      .formulario-pag-ingresa {
-        background-color: $primary-color;
-        padding: 50px;
+  .fotodefondo {
+    .ingresa {
+      fieldset {
+        .formulario-pag-ingresa {
+          padding: 50px;
+          text-align: center;
+          justify-content: center;
+        }
+        div {
+          h2 {
+            margin: 20px;
+            padding: 10px;
+            color: #c2aff0;
+            background-color: $titlesubtitle-bgcolor;
+          }
+          .usuario {
+            font-size: 30px;
+            text-decoration: underline;
+            margin: 10px;
+          }
+        }
+        div {
+          .contraseña {
+            font-size: 30px;
+            text-decoration: underline;
+            margin: 10px;
+          }
+        }
+        .botoningresa {
+          margin-top: 15px;
+          margin-bottom: 20px;
+          margin-right: 10px;
+          padding: 5px;
+          font-size: 20px;
+        }
+      }
+      .formulario-ingreso {
+        padding: 60px;
         text-align: center;
-        justify-content: center;
-      }
-      div {
         h2 {
+          margin: 20px;
+          padding: 10px;
+          color: #c2aff0;
+          background-color: $titlesubtitle-bgcolor;
         }
-        .usuario {
-          font-size: 30px;
-          text-decoration: underline;
-          margin: 10px;
+        div {
+          .nombredeusuario {
+            font-size: 30px;
+            text-decoration: underline;
+            margin: 10px;
+          }
         }
-      }
-      div {
-        .contraseña {
-          font-size: 30px;
-          text-decoration: underline;
-          margin: 10px;
+        div {
+          .nombrecreatucuenta {
+            font-size: 30px;
+            text-decoration: underline;
+            margin: 10px;
+          }
         }
-      }
-      .botoningresa {
-        margin-top: 10px;
-        margin-bottom: 20px;
-        margin-right: 10px;
-        padding: 5px;
-        font-size: 20px;
-      }
-    }
-    .formulario-ingreso {
-      padding: 60px;
-      text-align: center;
-      background-color: $primary-color;
-      h2 {
-      }
-      div {
-        .nombredeusuario {
-          font-size: 30px;
-          text-decoration: underline;
-          margin: 10px;
+        div {
+          .apellidocreatucuenta {
+            font-size: 30px;
+            text-decoration: underline;
+            margin: 10px;
+          }
         }
-      }
-      div {
-        .nombrecreatucuenta {
-          font-size: 30px;
-          text-decoration: underline;
-          margin: 10px;
+        div {
+          .emailcreatucuenta {
+            font-size: 30px;
+            text-decoration: underline;
+            margin: 10px;
+          }
         }
-      }
-      div {
-        .apellidocreatucuenta {
-          font-size: 30px;
-          text-decoration: underline;
-          margin: 10px;
+        div {
+          .contraseñacreatucuenta {
+            font-size: 30px;
+            text-decoration: underline;
+            margin: 10px;
+          }
         }
-      }
-      div {
-        .emailcreatucuenta {
-          font-size: 30px;
-          text-decoration: underline;
-          margin: 10px;
+        .botoncreatucuenta {
+          margin-top: 10px;
+          margin-bottom: 40px;
+          margin-right: 10px;
+          padding: 5px;
+          font-size: 20px;
         }
-      }
-      div {
-        .contraseñacreatucuenta {
-          font-size: 30px;
-          text-decoration: underline;
-          margin: 10px;
-        }
-      }
-      .botoncreatucuenta {
-        margin-top: 10px;
-        margin-bottom: 40px;
-        margin-right: 10px;
-        padding: 5px;
-        font-size: 20px;
       }
     }
   }
+}
+
+.bodyingresa {
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/modern-city_ZDAOHZ0HIY.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }

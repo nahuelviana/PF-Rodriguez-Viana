@@ -16,14 +16,19 @@ main h1 {
   background-color: #001524;
 }
 main .intro-section {
-  background-color: #c2aff0;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/modern-building_OYOH5FJMJ7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
-main .intro-section .clase2 {
+main .intro-section .ingresaoregistrate {
+  height: 30px;
+  background-color: #a2e8dd;
+  text-decoration: solid;
   text-align: center;
-  background-color: #001524;
-  color: blueviolet;
-  padding: 0px;
-  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: large;
 }
 main .intro-section h2 {
   text-align: center;
@@ -78,6 +83,9 @@ main .intro-section .muestras2 img:hover {
   width: 300px;
   filter: contrast(120%);
 }
+main .intro-section span a {
+  margin-left: 30px;
+}
 main .intro-section span a .btn {
   padding: 20px 40px;
   text-decoration: none;
@@ -123,23 +131,34 @@ main .intro-section span .btn:after {
   transition: all 0.5s;
   transition-delay: 0.25s;
 }
-
-.second-section {
-  background-color: #c2aff0;
+main .intro-section h3 {
   text-align: center;
-  padding: 5rem;
+  color: black;
+  text-decoration: underline;
 }
-.second-section .playstore .iconoplaystore {
-  width: 7rem;
+main .intro-section .playstore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.second-section .iconoappstore {
-  width: 7rem;
+main .intro-section .playstore img {
+  height: 10rem;
+}
+main .intro-section .appstore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+main .intro-section .appstore img {
+  height: 10rem;
 }
 
 /*-----------main catalogo---------- */
 main h1 {
+  background-color: #001524;
   font-size: 4rem;
-  background: linear-gradient(90deg, #c2aff0, white, #a2e8dd) 0 0/400% 100%;
+  background: linear-gradient(90deg, #c2aff0, grey, #a2e8dd) 0 0/400% 100%;
   animation: move-bg 4s infinite linear;
   color: transparent;
   -webkit-background-clip: text;
@@ -151,7 +170,11 @@ main h1 {
 }
 main .contenedor-catalogo {
   align-items: center;
-  background-color: #c2aff0;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/building-balconies_0WLRIRVMAA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   display: flex;
   justify-content: space-around;
 }
@@ -213,7 +236,11 @@ main .formulario {
   padding: 80px;
   text-align: center;
   justify-content: center;
-  background-color: #c2aff0;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/skyscaper-office%20building_1HZVBKVAUM.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 main .formulario .envianostuconsulta {
   font-size: 3rem;
@@ -268,7 +295,7 @@ main .formulario .fieldset div .borrar {
 main .mas-puntaje {
   margin-bottom: 0;
   text-align: center;
-  background-color: #c2aff0;
+  background-color: #a2e8dd;
 }
 main .aqui-encontraras {
   text-align: center;
@@ -280,77 +307,118 @@ main .aqui-encontraras {
   margin-bottom: -16px;
 }
 main .avatar-diseñadores {
-  background-color: #c2aff0;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/building-balconies_NQLPZWWXAG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 50px;
 }
-main .avatar-diseñadores div {
-  align-items: center;
-  text-align: center;
-  width: 300px;
-  height: 400px;
-  background-color: #a2e8dd;
-  border-radius: 5%;
-  padding: 8px;
-  margin-bottom: 8px;
+main .avatar-diseñadores .card {
+  color: white;
+  background-image: url(https://www.w3schools.com/w3images/avatar2.png);
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 280px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
 }
+main .avatar-diseñadores .card .card-content {
+  padding: 1.5rem;
+  background: linear-gradient(black, rgba(0, 0, 0, 0.5));
+}
+main .avatar-diseñadores .card .card-content .card-content__title {
+  text-decoration: underline;
+  text-decoration-color: lightgray;
+}
+main .avatar-diseñadores .card .card-content .card-content__body {
+  color: rgba(255, 255, 255, 0.8);
+}
+main .avatar-diseñadores .card .card-content .button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.2rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.5s ease;
+}
+main .avatar-diseñadores .card .card-content .button:hover,
+main .avatar-diseñadores .card .card-content .button:focus {
+  background-color: white;
+  color: black;
+}
+
 /*-----------main ingresa---------- */
-main .ingresa fieldset .formulario-pag-ingresa {
-  background-color: #c2aff0;
+main .fotodefondo .ingresa fieldset .formulario-pag-ingresa {
   padding: 50px;
   text-align: center;
   justify-content: center;
 }
-main .ingresa fieldset div .usuario {
+main .fotodefondo .ingresa fieldset div h2 {
+  margin: 20px;
+  padding: 10px;
+  color: #c2aff0;
+  background-color: #001524;
+}
+main .fotodefondo .ingresa fieldset div .usuario {
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
-main .ingresa fieldset div .contraseña {
+main .fotodefondo .ingresa fieldset div .contraseña {
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
-main .ingresa fieldset .botoningresa {
-  margin-top: 10px;
+main .fotodefondo .ingresa fieldset .botoningresa {
+  margin-top: 15px;
   margin-bottom: 20px;
   margin-right: 10px;
   padding: 5px;
   font-size: 20px;
 }
-main .ingresa .formulario-ingreso {
+main .fotodefondo .ingresa .formulario-ingreso {
   padding: 60px;
   text-align: center;
-  background-color: #c2aff0;
 }
-main .ingresa .formulario-ingreso div .nombredeusuario {
+main .fotodefondo .ingresa .formulario-ingreso h2 {
+  margin: 20px;
+  padding: 10px;
+  color: #c2aff0;
+  background-color: #001524;
+}
+main .fotodefondo .ingresa .formulario-ingreso div .nombredeusuario {
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
-main .ingresa .formulario-ingreso div .nombrecreatucuenta {
+main .fotodefondo .ingresa .formulario-ingreso div .nombrecreatucuenta {
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
-main .ingresa .formulario-ingreso div .apellidocreatucuenta {
+main .fotodefondo .ingresa .formulario-ingreso div .apellidocreatucuenta {
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
-main .ingresa .formulario-ingreso div .emailcreatucuenta {
+main .fotodefondo .ingresa .formulario-ingreso div .emailcreatucuenta {
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
-main .ingresa .formulario-ingreso div .contraseñacreatucuenta {
+main .fotodefondo .ingresa .formulario-ingreso div .contraseñacreatucuenta {
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
-main .ingresa .formulario-ingreso .botoncreatucuenta {
+main .fotodefondo .ingresa .formulario-ingreso .botoncreatucuenta {
   margin-top: 10px;
   margin-bottom: 40px;
   margin-right: 10px;
@@ -358,9 +426,18 @@ main .ingresa .formulario-ingreso .botoncreatucuenta {
   font-size: 20px;
 }
 
+.bodyingresa {
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/modern-city_ZDAOHZ0HIY.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
 footer {
-  height: 80px;
+  height: 250px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0rem;
@@ -371,12 +448,111 @@ footer {
 footer .encontranos {
   text-decoration: underline;
 }
-footer .icono-redes {
-  padding: 15px;
-  align-items: center;
+footer .icono-redes .mai {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
-footer .icono-redes a img {
-  width: 40px;
+footer .icono-redes .up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+footer .icono-redes .down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+footer .icono-redes .card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+footer .icono-redes .instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+footer .icono-redes .card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+footer .icono-redes .twitter {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #03a9f4;
+}
+footer .icono-redes .card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+footer .icono-redes .github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+footer .icono-redes .card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+footer .icono-redes .discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+footer .icono-redes .card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+footer .icono-redes .card1:hover .instagram {
+  fill: white;
+}
+footer .icono-redes .card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03a9f4;
+}
+footer .icono-redes .card2:hover .twitter {
+  fill: white;
+}
+footer .icono-redes .card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+footer .icono-redes .card3:hover .github {
+  fill: white;
+}
+footer .icono-redes .card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+footer .icono-redes .card4:hover .discord {
+  fill: white;
 }
 
 @media screen and (max-width: 1200px) {
@@ -427,6 +603,16 @@ footer .icono-redes a img {
   footer {
     height: 150px;
     flex-direction: column;
+  }
+}
+@media (hover) {
+  .card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .card:hover .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
   }
 }
 
