@@ -295,7 +295,8 @@ main .formulario .fieldset div .borrar {
 main .mas-puntaje {
   margin-bottom: 0;
   text-align: center;
-  background-color: #a2e8dd;
+  color: #c2aff0;
+  background-color: #001524;
 }
 main .aqui-encontraras {
   text-align: center;
