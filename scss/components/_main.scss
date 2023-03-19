@@ -160,7 +160,6 @@ main {
       0 / 400% 100%;
     animation: move-bg 4s infinite linear;
     color: transparent;
-    -webkit-background-clip: text;
   }
 
   @keyframes move-bg {
@@ -251,6 +250,7 @@ main {
 
 main {
   h1 {
+    display: none;
   }
   .formulario {
     display: flex;
@@ -291,6 +291,7 @@ main {
           font-size: 30px;
         }
         .consulta img {
+          display: none;
         }
         .textoconsulta {
           width: 600px;
@@ -321,6 +322,7 @@ main {
 
 main {
   h1 {
+    display: none;
   }
   .mas-puntaje {
     margin-bottom: 0;
@@ -337,6 +339,7 @@ main {
     font-size: 30px;
     margin-bottom: -16px;
     p {
+      display: none;
     }
   }
   .avatar-diseñadores {
@@ -391,6 +394,7 @@ main {
 /*-----------main ingresa---------- */
 main {
   h1 {
+    display: none;
   }
   .fotodefondo {
     .ingresa {
