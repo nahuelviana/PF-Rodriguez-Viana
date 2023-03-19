@@ -12,19 +12,22 @@ main {
     background-position: center center;
     background-attachment: fixed;
     .ingresaoregistrate {
-      height: 30px;
-      background-color: $secondary-color;
-      text-decoration: solid;
-      text-align: center;
-      text-decoration: underline;
-      font-size: large;
+      background-color: $titlesubtitle-bgcolor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: $primary-color;
     }
     h2 {
+      background-color: $titlesubtitle-bgcolor;
+      color: $primary-color;
       text-align: center;
       font-size: 3rem;
       padding: 1rem;
     }
     .misdisenos {
+      color: $primary-color;
       padding: 10px;
       font-size: 2rem;
       text-decoration: underline;
@@ -50,6 +53,7 @@ main {
       }
     }
     .otrosdisenos {
+      color: $primary-color;
       padding: 10px;
       font-size: 2rem;
       text-decoration: underline;
@@ -139,7 +143,7 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 10px;
+      padding: 40px;
       img {
         height: 10rem;
       }
@@ -175,6 +179,9 @@ main {
     justify-content: space-around;
     .contenedor-disenos {
       h2 {
+        margin-top: 20px;
+        background-color: $titlesubtitle-bgcolor;
+        color: $primary-color;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -207,6 +214,9 @@ main {
     .contenedor-comunidad {
       .comunidad {
         h2 {
+          margin-top: 20px;
+          color: $primary-color;
+          background-color: $titlesubtitle-bgcolor;
           text-align: center;
           text-decoration: underline;
         }
@@ -255,7 +265,7 @@ main {
     .envianostuconsulta {
       font-size: 3rem;
       margin: 20px;
-      padding: 10px;
+      padding: 5px;
       color: $text-font-color;
       background-color: $titlesubtitle-bgcolor;
     }

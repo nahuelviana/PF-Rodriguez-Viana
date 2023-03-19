@@ -23,19 +23,22 @@ main .intro-section {
   background-attachment: fixed;
 }
 main .intro-section .ingresaoregistrate {
-  height: 30px;
-  background-color: #a2e8dd;
-  text-decoration: solid;
-  text-align: center;
-  text-decoration: underline;
-  font-size: large;
+  background-color: #001524;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #c2aff0;
 }
 main .intro-section h2 {
+  background-color: #001524;
+  color: #c2aff0;
   text-align: center;
   font-size: 3rem;
   padding: 1rem;
 }
 main .intro-section .misdisenos {
+  color: #c2aff0;
   padding: 10px;
   font-size: 2rem;
   text-decoration: underline;
@@ -61,6 +64,7 @@ main .intro-section .muestras1 .muestra:hover {
   filter: contrast(120%);
 }
 main .intro-section .otrosdisenos {
+  color: #c2aff0;
   padding: 10px;
   font-size: 2rem;
   text-decoration: underline;
@@ -148,7 +152,7 @@ main .intro-section .appstore {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 40px;
 }
 main .intro-section .appstore img {
   height: 10rem;
@@ -179,6 +183,9 @@ main .contenedor-catalogo {
   justify-content: space-around;
 }
 main .contenedor-catalogo .contenedor-disenos h2 {
+  margin-top: 20px;
+  background-color: #001524;
+  color: #c2aff0;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -208,6 +215,9 @@ main .contenedor-catalogo .contenedor-disenos .mis-disenos .diseno-muestra img:h
   filter: contrast(120%);
 }
 main .contenedor-catalogo .contenedor-comunidad .comunidad h2 {
+  margin-top: 20px;
+  color: #c2aff0;
+  background-color: #001524;
   text-align: center;
   text-decoration: underline;
 }
@@ -245,7 +255,7 @@ main .formulario {
 main .formulario .envianostuconsulta {
   font-size: 3rem;
   margin: 20px;
-  padding: 10px;
+  padding: 5px;
   color: blueviolet;
   background-color: #001524;
 }
@@ -584,6 +594,9 @@ footer .icono-redes .card4:hover .discord {
   .envianostuconsulta {
     width: fit-content;
   }
+  .ingresaoregistrate p {
+    height: 50px;
+  }
 }
 @media screen and (max-width: 600px) {
   .diseño-muestra {
@@ -602,7 +615,7 @@ footer .icono-redes .card4:hover .discord {
 }
 @media screen and (max-width: 425px) {
   footer {
-    height: 150px;
+    height: 300px;
     flex-direction: column;
   }
 }

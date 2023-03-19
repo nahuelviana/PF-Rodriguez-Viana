@@ -27,6 +27,9 @@
   .envianostuconsulta {
     width: fit-content;
   }
+  .ingresaoregistrate p {
+    height: 50px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -49,7 +52,7 @@
 
 @media screen and (max-width: 425px) {
   footer {
-    height: 150px;
+    height: 300px;
     flex-direction: column;
   }
   footer .icono-redes {
