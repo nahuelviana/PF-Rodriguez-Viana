@@ -11,8 +11,20 @@ header {
 }
 /* -----------main index ------------- */
 main h1 {
+  display: flex;
   margin-bottom: 0;
+  justify-content: center;
   text-align: center;
+  background-color: #001524;
+  font-size: 4rem;
+  background: linear-gradient(90deg, #001524, grey, #a2e8dd) 0 0/400% 100%;
+  animation: move-bg 4s infinite linear;
+  color: white;
+}
+@keyframes move-bg {
+  to {
+    background-position: 400% 0;
+  }
 }
 main .intro-section {
   background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/modern-building_OYOH5FJMJ7.jpg");
@@ -28,6 +40,7 @@ main .intro-section .ingresaoregistrate {
   justify-content: center;
   font-size: 30px;
   color: #c2aff0;
+  padding: 10px;
 }
 main .intro-section h2 {
   background-color: #001524;
@@ -159,18 +172,6 @@ main .intro-section .appstore img {
 }
 
 /*-----------main catalogo---------- */
-main h1 {
-  background-color: #001524;
-  font-size: 4rem;
-  background: linear-gradient(90deg, #001524, grey, #a2e8dd) 0 0/400% 100%;
-  animation: move-bg 4s infinite linear;
-  color: white;
-}
-@keyframes move-bg {
-  to {
-    background-position: 400% 0;
-  }
-}
 main .contenedor-catalogo {
   align-items: center;
   background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/building-balconies_0WLRIRVMAA.jpg");
@@ -359,11 +360,11 @@ main .avatar-diseñadores .card {
   border-radius: 1rem;
   overflow: hidden;
   transition: transform 500ms ease;
+  margin: 5px;
 }
 main .avatar-diseñadores .card .card-content {
-  padding: 1.5rem;
+  padding: 1rem;
   background: linear-gradient(black, rgba(0, 0, 0, 0.5));
-  background-position: center;
 }
 main .avatar-diseñadores .card .card-content .card-content__title {
   text-decoration: underline;
@@ -502,7 +503,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0rem;
+  padding: 1rem;
   color: #a2e8dd;
   background-color: #001524;
   font-family: Impact, Haettenschweiler, "cursive", sans-serif;
@@ -647,7 +648,10 @@ footer .icono-redes .card4:hover .discord {
   }
   .ingresaoregistrate {
     margin-bottom: 50px;
-    height: 150px;
+    height: 200px;
+  }
+  .h1 {
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 600px) {
