@@ -3,7 +3,6 @@ main {
   h1 {
     margin-bottom: 0;
     text-align: center;
-    background-color: $titlesubtitle-bgcolor;
   }
   .intro-section {
     background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/modern-building_OYOH5FJMJ7.jpg");
@@ -33,7 +32,7 @@ main {
       text-decoration: underline;
     }
     .muestras1 {
-      padding: 10px;
+      padding: 30px;
       display: flex;
       justify-content: center;
       width: 600px;
@@ -59,7 +58,7 @@ main {
       text-decoration: underline;
     }
     .muestras2 {
-      padding: 10px;
+      padding: 30px;
       display: flex;
       justify-content: center;
       width: 600px;
@@ -156,10 +155,15 @@ main {
   h1 {
     background-color: $titlesubtitle-bgcolor;
     font-size: 4rem;
-    background: linear-gradient(90deg, $primary-color, grey, $secondary-color) 0
-      0 / 400% 100%;
+    background: linear-gradient(
+        90deg,
+        $titlesubtitle-bgcolor,
+        grey,
+        $secondary-color
+      )
+      0 0 / 400% 100%;
     animation: move-bg 4s infinite linear;
-    color: transparent;
+    color: white;
   }
 
   @keyframes move-bg {
@@ -250,7 +254,6 @@ main {
 
 main {
   h1 {
-    display: none;
   }
   .formulario {
     display: flex;
@@ -273,31 +276,51 @@ main {
       padding: 5px;
       div {
         .nombre {
+          color: $secondary-color;
+          background-color: $titlesubtitle-bgcolor;
+          padding: 5px;
+          border-radius: 10%;
           font-size: 30px;
           text-decoration: underline;
           margin: 10px;
         }
         .apellido {
+          color: $secondary-color;
+          background-color: $titlesubtitle-bgcolor;
+          padding: 5px;
+          border-radius: 10%;
           font-size: 30px;
           text-decoration: underline;
           margin: 10px;
         }
         .email {
+          color: $secondary-color;
+          background-color: $titlesubtitle-bgcolor;
+          padding: 5px;
+          border-radius: 10%;
           font-size: 30px;
           text-decoration: underline;
           margin: 10px;
         }
         .consulta p {
+          color: $secondary-color;
+          background-color: $titlesubtitle-bgcolor;
+          padding: 5px;
+          border-radius: 10%;
           font-size: 30px;
-        }
-        .consulta img {
-          display: none;
+          text-decoration: underline;
+          margin: 10px;
+          font-size: 30px;
         }
         .textoconsulta {
           width: 600px;
           height: 200px;
         }
-        .aceptaterminos {
+        .aceptaterminos p {
+          color: white;
+          background-color: black;
+          padding: 5px;
+          border-radius: 10%;
           font-size: 25px;
           text-decoration: underline;
         }
@@ -322,7 +345,6 @@ main {
 
 main {
   h1 {
-    display: none;
   }
   .mas-puntaje {
     margin-bottom: 0;
@@ -339,7 +361,6 @@ main {
     font-size: 30px;
     margin-bottom: -16px;
     p {
-      display: none;
     }
   }
   .avatar-diseñadores {
@@ -364,6 +385,7 @@ main {
       .card-content {
         padding: 1.5rem;
         background: linear-gradient(black, rgba(0, 0, 0, 0.5));
+        background-position: center;
         .card-content__title {
           text-decoration: underline;
           text-decoration-color: lightgray;
@@ -394,7 +416,6 @@ main {
 /*-----------main ingresa---------- */
 main {
   h1 {
-    display: none;
   }
   .fotodefondo {
     .ingresa {
