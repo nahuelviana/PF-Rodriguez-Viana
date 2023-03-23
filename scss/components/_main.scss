@@ -126,9 +126,10 @@ main {
       }
     }
     h3 {
-      text-align: center;
-      color: black;
+      display: flex;
+      justify-content: center;
       text-decoration: underline;
+      color: $primary-color;
     }
     .playstore {
       display: flex;
@@ -302,7 +303,7 @@ main {
           text-decoration: underline;
           margin: 10px;
         }
-        .consulta p {
+        .consulta .pregunta {
           color: $secondary-color;
           background-color: $titlesubtitle-bgcolor;
           padding: 5px;
@@ -313,10 +314,10 @@ main {
           font-size: 30px;
         }
         .textoconsulta {
-          width: 600px;
-          height: 200px;
+          width: 550px;
+          height: 150px;
         }
-        .aceptaterminos p {
+        .aceptaterminos .p {
           color: white;
           background-color: black;
           padding: 5px;
@@ -433,6 +434,10 @@ main {
             background-color: $titlesubtitle-bgcolor;
           }
           .usuario {
+            color: $secondary-color;
+            background-color: $titlesubtitle-bgcolor;
+            padding: 5px;
+            border-radius: 10%;
             font-size: 30px;
             text-decoration: underline;
             margin: 10px;
@@ -440,6 +445,10 @@ main {
         }
         div {
           .contraseña {
+            color: $secondary-color;
+            background-color: $titlesubtitle-bgcolor;
+            padding: 5px;
+            border-radius: 10%;
             font-size: 30px;
             text-decoration: underline;
             margin: 10px;
@@ -464,6 +473,10 @@ main {
         }
         div {
           .nombredeusuario {
+            color: $secondary-color;
+            background-color: $titlesubtitle-bgcolor;
+            padding: 5px;
+            border-radius: 10%;
             font-size: 30px;
             text-decoration: underline;
             margin: 10px;
@@ -471,6 +484,10 @@ main {
         }
         div {
           .nombrecreatucuenta {
+            color: $secondary-color;
+            background-color: $titlesubtitle-bgcolor;
+            padding: 5px;
+            border-radius: 10%;
             font-size: 30px;
             text-decoration: underline;
             margin: 10px;
@@ -478,6 +495,10 @@ main {
         }
         div {
           .apellidocreatucuenta {
+            color: $secondary-color;
+            background-color: $titlesubtitle-bgcolor;
+            padding: 5px;
+            border-radius: 10%;
             font-size: 30px;
             text-decoration: underline;
             margin: 10px;
@@ -485,6 +506,10 @@ main {
         }
         div {
           .emailcreatucuenta {
+            color: $secondary-color;
+            background-color: $titlesubtitle-bgcolor;
+            padding: 5px;
+            border-radius: 10%;
             font-size: 30px;
             text-decoration: underline;
             margin: 10px;
@@ -492,6 +517,10 @@ main {
         }
         div {
           .contraseñacreatucuenta {
+            color: $secondary-color;
+            background-color: $titlesubtitle-bgcolor;
+            padding: 5px;
+            border-radius: 10%;
             font-size: 30px;
             text-decoration: underline;
             margin: 10px;

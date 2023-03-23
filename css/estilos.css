@@ -135,9 +135,10 @@ main .intro-section span .btn:after {
   transition-delay: 0.25s;
 }
 main .intro-section h3 {
-  text-align: center;
-  color: black;
+  display: flex;
+  justify-content: center;
   text-decoration: underline;
+  color: #c2aff0;
 }
 main .intro-section .playstore {
   display: flex;
@@ -287,7 +288,7 @@ main .formulario .fieldset div .email {
   text-decoration: underline;
   margin: 10px;
 }
-main .formulario .fieldset div .consulta p {
+main .formulario .fieldset div .consulta .pregunta {
   color: #a2e8dd;
   background-color: #001524;
   padding: 5px;
@@ -298,10 +299,10 @@ main .formulario .fieldset div .consulta p {
   font-size: 30px;
 }
 main .formulario .fieldset div .textoconsulta {
-  width: 600px;
-  height: 200px;
+  width: 550px;
+  height: 150px;
 }
-main .formulario .fieldset div .aceptaterminos p {
+main .formulario .fieldset div .aceptaterminos .p {
   color: white;
   background-color: black;
   padding: 5px;
@@ -400,11 +401,19 @@ main .fotodefondo .ingresa fieldset div h2 {
   background-color: #001524;
 }
 main .fotodefondo .ingresa fieldset div .usuario {
+  color: #a2e8dd;
+  background-color: #001524;
+  padding: 5px;
+  border-radius: 10%;
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
 main .fotodefondo .ingresa fieldset div .contraseña {
+  color: #a2e8dd;
+  background-color: #001524;
+  padding: 5px;
+  border-radius: 10%;
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
@@ -427,26 +436,46 @@ main .fotodefondo .ingresa .formulario-ingreso h2 {
   background-color: #001524;
 }
 main .fotodefondo .ingresa .formulario-ingreso div .nombredeusuario {
+  color: #a2e8dd;
+  background-color: #001524;
+  padding: 5px;
+  border-radius: 10%;
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
 main .fotodefondo .ingresa .formulario-ingreso div .nombrecreatucuenta {
+  color: #a2e8dd;
+  background-color: #001524;
+  padding: 5px;
+  border-radius: 10%;
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
 main .fotodefondo .ingresa .formulario-ingreso div .apellidocreatucuenta {
+  color: #a2e8dd;
+  background-color: #001524;
+  padding: 5px;
+  border-radius: 10%;
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
 main .fotodefondo .ingresa .formulario-ingreso div .emailcreatucuenta {
+  color: #a2e8dd;
+  background-color: #001524;
+  padding: 5px;
+  border-radius: 10%;
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
 }
 main .fotodefondo .ingresa .formulario-ingreso div .contraseñacreatucuenta {
+  color: #a2e8dd;
+  background-color: #001524;
+  padding: 5px;
+  border-radius: 10%;
   font-size: 30px;
   text-decoration: underline;
   margin: 10px;
