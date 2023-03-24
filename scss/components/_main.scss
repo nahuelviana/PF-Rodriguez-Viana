@@ -6,7 +6,7 @@ main {
     justify-content: center;
     text-align: center;
     background-color: $titlesubtitle-bgcolor;
-    font-size: 4rem;
+    font-size: 3rem;
     background: linear-gradient(
         90deg,
         $titlesubtitle-bgcolor,
@@ -58,8 +58,8 @@ main {
       width: 600px;
       .muestra {
         margin: 10px;
-        height: 100px;
-        width: 200px;
+        height: 200px;
+        width: 100px;
         flex-grow: 1;
         object-fit: cover;
         opacity: 8;
@@ -83,7 +83,9 @@ main {
       justify-content: center;
       width: 600px;
       img {
-        margin: 10px;
+        height: 200px;
+        width: 100px;
+        margin: 5px;
         flex-grow: 1;
         object-fit: cover;
         opacity: 8;
@@ -186,6 +188,8 @@ main {
     justify-content: space-around;
     .contenedor-disenos {
       h2 {
+        display: flex;
+        width: 100%;
         margin-top: 20px;
         background-color: $titlesubtitle-bgcolor;
         color: $primary-color;
@@ -193,14 +197,16 @@ main {
         justify-content: center;
         align-items: center;
         text-decoration: underline;
+        margin-bottom: 10px;
       }
       .mis-disenos {
         place-items: center;
         align-items: center;
         justify-content: center;
         display: grid;
-        grid-template-rows: 170px 170px 170px 170px 170px 170px;
-        grid-template-columns: 300px 300px;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 80px;
         .diseno-muestra {
           justify-content: center;
           width: 200px;
@@ -234,8 +240,10 @@ main {
           align-items: center;
           justify-content: center;
           display: grid;
-          grid-template-rows: 170px 170px 170px 170px 170px 170px;
-          grid-template-columns: 300px 300px;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(6, 1fr);
+          grid-gap: 80px;
+          width: fit-content;
           .diseños-muestra {
             img {
               width: 200px;

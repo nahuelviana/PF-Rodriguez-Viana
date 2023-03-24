@@ -16,7 +16,7 @@ main h1 {
   justify-content: center;
   text-align: center;
   background-color: #001524;
-  font-size: 4rem;
+  font-size: 3rem;
   background: linear-gradient(90deg, #001524, grey, #a2e8dd) 0 0/400% 100%;
   animation: move-bg 4s infinite linear;
   color: white;
@@ -63,8 +63,8 @@ main .intro-section .muestras1 {
 }
 main .intro-section .muestras1 .muestra {
   margin: 10px;
-  height: 100px;
-  width: 200px;
+  height: 200px;
+  width: 100px;
   flex-grow: 1;
   object-fit: cover;
   opacity: 8;
@@ -88,7 +88,9 @@ main .intro-section .muestras2 {
   width: 600px;
 }
 main .intro-section .muestras2 img {
-  margin: 10px;
+  height: 200px;
+  width: 100px;
+  margin: 5px;
   flex-grow: 1;
   object-fit: cover;
   opacity: 8;
@@ -183,6 +185,8 @@ main .contenedor-catalogo {
   justify-content: space-around;
 }
 main .contenedor-catalogo .contenedor-disenos h2 {
+  display: flex;
+  width: 100%;
   margin-top: 20px;
   background-color: #001524;
   color: #c2aff0;
@@ -190,14 +194,16 @@ main .contenedor-catalogo .contenedor-disenos h2 {
   justify-content: center;
   align-items: center;
   text-decoration: underline;
+  margin-bottom: 10px;
 }
 main .contenedor-catalogo .contenedor-disenos .mis-disenos {
   place-items: center;
   align-items: center;
   justify-content: center;
   display: grid;
-  grid-template-rows: 170px 170px 170px 170px 170px 170px;
-  grid-template-columns: 300px 300px;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
 }
 main .contenedor-catalogo .contenedor-disenos .mis-disenos .diseno-muestra {
   justify-content: center;
@@ -226,8 +232,10 @@ main .contenedor-catalogo .contenedor-comunidad .disenos-ajenos .disenos-muestra
   align-items: center;
   justify-content: center;
   display: grid;
-  grid-template-rows: 170px 170px 170px 170px 170px 170px;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 80px;
+  width: fit-content;
 }
 main .contenedor-catalogo .contenedor-comunidad .disenos-ajenos .disenos-muestras-ajenos .diseños-muestra img {
   width: 200px;
@@ -619,6 +627,9 @@ footer .icono-redes .card4:hover .discord {
 }
 
 @media screen and (max-width: 1200px) {
+  .header {
+    width: fit-content;
+  }
   .contenedor-catalogo {
     justify-content: center;
     align-items: center;
@@ -655,8 +666,19 @@ footer .icono-redes .card4:hover .discord {
   }
 }
 @media screen and (max-width: 600px) {
-  .diseño-muestra {
+  .contenedor-disenos h2 {
+    height: 50%;
+    width: 50%;
+  }
+  .contenedor-disenos .mis-disenos {
     display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contenedor-disenos .mis-disenos .diseno-muestra {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
   }
   main .formulario fieldset .consulta .textoconsulta {
     width: 50%;
@@ -685,5 +707,12 @@ footer .icono-redes .card4:hover .discord {
     transition-delay: 500ms;
   }
 }
+/* @media screen and (max-width: 600px) {
+  .mis-disenos {
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+ */
 
 /*# sourceMappingURL=estilos.css.map */

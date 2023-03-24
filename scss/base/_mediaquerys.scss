@@ -1,4 +1,7 @@
 @media screen and (max-width: 1200px) {
+  .header {
+    width: fit-content;
+  }
   .contenedor-catalogo {
     justify-content: center;
     align-items: center;
@@ -39,10 +42,21 @@
 }
 
 @media screen and (max-width: 600px) {
-  .diseño-muestra {
-    display: grid;
-  }
-  .mis-disenos {
+  .contenedor-disenos {
+    h2 {
+      height: 50%;
+      width: 50%;
+    }
+    .mis-disenos {
+      display: grid;
+      grid-template-rows: repeat(12, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      .diseno-muestra {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+      }
+    }
   }
   main .formulario fieldset .consulta .textoconsulta {
     width: 50%;
@@ -75,3 +89,11 @@
     transition-delay: 500ms;
   }
 }
+
+/* @media screen and (max-width: 600px) {
+  .mis-disenos {
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+ */
